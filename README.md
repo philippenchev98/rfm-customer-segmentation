@@ -1,7 +1,7 @@
 # rfm-customer-segmentation
 Python project for customer segmentation using RFM analysis and K-Means clustering algorithms.
 
-# Customer Segmentation & RFM Analysis 🎯
+# Customer Segmentation & RFM Analysis
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/philippenchev98/rfm-customer-segmentation/blob/main/RFM_Analysis.ipynb)
 
