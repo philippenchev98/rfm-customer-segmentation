@@ -5,7 +5,8 @@ Python project for customer segmentation using RFM analysis and K-Means clusteri
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/philippenchev98/rfm-customer-segmentation/blob/main/RFM_Analysis.ipynb) 
 
-📊 **View the business presentation [here](Actuarial_Presentation.pdf)**
+📊 **View the business presentation [here](Customer_Segmentation_&_RFM_Analysis.pdf
+)**
 
 ## Project Overview
 This project focuses on identifying distinct customer segments based on their purchasing behavior. By calculating **RFM (Recency, Frequency, Monetary)** scores and applying **K-Means Clustering** (an unsupervised Machine Learning algorithm), the model automatically groups customers into actionable business segments (e.g., VIPs, Loyal Customers, At-Risk).
