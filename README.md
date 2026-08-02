@@ -23,10 +23,17 @@ In marketing and e-commerce, RFM is a proven behavioral segmentation technique u
 ## Machine Learning: K-Means Clustering
 Instead of manually assigning arbitrary rules for segmentation, this project uses the **K-Means algorithm** to find the optimal customer groupings mathematically. The algorithm calculates the distances between data points and groups similar customers together, revealing hidden patterns in the 3D space of R, F, and M.
 
+**Mathematical Validation:** To avoid arbitrary grouping, the optimal number of clusters (k=4) was mathematically determined using the **Elbow Method**. By calculating the Within-Cluster Sum of Squares (Inertia) across multiple test models, we identify the exact point where adding more clusters yields diminishing returns, ensuring analytical rigor.
+
 ## Visualizations
 
-### 1. 3D Customer Segments
-The 3D scatter plot visualizes how the K-Means algorithm separates the customer base into distinct clusters. The "VIP" cluster typically shows low Recency, high Frequency, and high Monetary values.
+### 1. Optimal Cluster Selection (Elbow Method)
+The graph below plots the model's inertia against the number of clusters. The clear "elbow" at k=4 mathematically justifies the decision to divide the customer base into exactly four distinct business segments.
+
+![Elbow Method Plot](elbow_plot.png)
+
+### 2. 3D Customer Segments
+The 3D scatter plot visualizes how the K-Means algorithm separates the customer base. The model successfully isolates the "VIP" cluster, characterized by its extreme values: low Recency, high Frequency, and high Monetary spend.
 
 ![3D Customer Clusters](3d_plot.png)
 
