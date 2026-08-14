@@ -11,6 +11,30 @@ Python project for customer segmentation using RFM analysis and K-Means clusteri
 ## Project Overview
 This project focuses on identifying distinct customer segments based on their purchasing behavior. By calculating **RFM (Recency, Frequency, Monetary)** scores and applying **K-Means Clustering** (an unsupervised Machine Learning algorithm), the model automatically groups customers into actionable business segments (e.g., VIPs, Loyal Customers, At-Risk).
 
+## Key Findings
+
+From 541,909 raw transactions (2010–2011), cleaning removed 135,080 rows with
+missing CustomerID plus cancelled/zero-price orders, leaving 397,884 rows and
+**4,338 unique customers**.
+
+K-Means (k=4, features log-transformed and standardized with StandardScaler to
+handle the heavy right skew of Monetary and Frequency) produced four segments:
+
+| Cluster | Share | Avg. Recency | Avg. Frequency | Avg. Spend | Profile |
+|---------|-------|--------------|----------------|------------|---------|
+| 1 | 16.5% (716) | 12 days | 13.7 orders | £8,074 | **VIP / Champions** |
+| 2 | 27.0% (1,173) | 71 days | 4.1 orders | £1,803 | Regulars cooling off |
+| 0 | 19.3% (837) | 18 days | 2.1 orders | £552 | Recent low-spend |
+| 3 | 37.2% (1,612) | 183 days | 1.3 orders | £344 | **At-risk / Lost** |
+
+- **The VIP segment drives the business:** only 16.5% of customers generate
+  roughly **£5.8M of ≈ £8.9M total revenue (~65%)** — a classic Pareto pattern.
+- **The largest segment is the lost one:** 37% of the customer base hasn't
+  purchased in ~6 months on average — the primary target for win-back campaigns.
+- Cluster 2 is the highest-leverage group: still moderately active (71-day
+  recency) but drifting — retention offers here are cheaper than re-acquiring
+  cluster 3.
+
 ## Data Source
 The model uses the **Online Retail Dataset** from the UCI Machine Learning Repository. It contains all the transactions occurring between 2010 and 2011 for a UK-based e-commerce store.
 
