@@ -32,7 +32,7 @@ handle the heavy right skew of Monetary and Frequency) produced four segments:
 - **The largest segment is the lost one:** 37% of the customer base hasn't
   purchased in ~6 months on average - the primary target for win-back campaigns.
 - Cluster 2 is the highest-leverage group: still moderately active (71-day
-  recency) but drifting — retention offers here are cheaper than re-acquiring
+  recency) but drifting - retention offers here are cheaper than re-acquiring
   cluster 3.
 
 ## Data Source
