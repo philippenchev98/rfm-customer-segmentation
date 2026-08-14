@@ -28,9 +28,9 @@ handle the heavy right skew of Monetary and Frequency) produced four segments:
 | 3 | 37.2% (1,612) | 183 days | 1.3 orders | £344 | **At-risk / Lost** |
 
 - **The VIP segment drives the business:** only 16.5% of customers generate
-  roughly **£5.8M of ≈ £8.9M total revenue (~65%)** — a classic Pareto pattern.
+  roughly **£5.8M of ≈ £8.9M total revenue (~65%)** - a classic Pareto pattern.
 - **The largest segment is the lost one:** 37% of the customer base hasn't
-  purchased in ~6 months on average — the primary target for win-back campaigns.
+  purchased in ~6 months on average - the primary target for win-back campaigns.
 - Cluster 2 is the highest-leverage group: still moderately active (71-day
   recency) but drifting — retention offers here are cheaper than re-acquiring
   cluster 3.
